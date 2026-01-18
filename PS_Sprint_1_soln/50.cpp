@@ -248,3 +248,155 @@
 //     cout<<a;
 //     return 0;
 // }
+
+// 11. **Finding the Least Common Multiple (LCM)** 
+
+// #include <iostream>
+// using namespace std;
+
+// int gcd(int a, int b){
+//     while(b!=0){
+//         int temp=b;
+//         b=a%b;
+//         a=temp;
+//     }
+//     return a;
+// }
+
+// int main(){
+//     int a , b;
+//     cout<<"Enter 2 numbers"<<endl;
+//     cin>>a>>b;
+
+//     int lcm = (a*b)/gcd(a,b);
+//     cout<<lcm;
+
+//     return 0;
+// }
+
+// 12. **Counting Vowels and Consonants in a String**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     cout<<"Enter a sentence"<<endl;
+//     cin>>s;
+
+//     int vowel = 0, consonents = 0;
+
+//     for(int i = 0; i<s.length(); i++){
+//         char c = s[i];
+
+//         if(c>='A' && c<='Z')
+//             c=c+32; /*converts to lowercase 'A'=65 'Z'=90  'A' = 65 'a' = 97 97 - 65 = 32*/
+//         if(c>='a' && c<='z'){
+//             if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
+//                 vowel++;
+//             else
+//                 consonents++;    
+//         }
+            
+//     }
+//     cout<<"Vowels: "<<vowel<<endl;
+//     cout<<"Consonents: "<<consonents<<endl;
+
+//     return 0;
+// }
+
+// 13. **Reversing a String**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     cout<<"Enter a string"<<endl;
+//     string s;
+//     cin>>s;
+
+//     int l = 0, r = s.length()-1;
+    
+//     while(l<r){
+//         char temp = s[l];
+//         s[l] = s[r];
+//         s[r] = temp;
+        
+//         l++;
+//         r--;
+//     }
+//     cout<<s;
+
+//     return 0;
+// }
+
+// 14. **Finding the Largest and Smallest Numbers in an Array**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter a number"<<endl;
+//     cin>>n;
+
+//     int arr[n];
+//     for(int i = 0; i<n; i++)
+//         cin>>arr[i];
+//     int smallest = arr[0];
+//     int largest = arr[0];
+
+//     for(int i = 1; i<n; i++){
+//         if(arr[i]<smallest)
+//             smallest= arr[i];
+
+//         if(arr[i]>largest)
+//             largest= arr[i];
+//     }
+//     cout<<"Smallest: "<<smallest<<endl;
+//     cout<<"Largest: "<<largest<<endl;
+    
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int size;
+    
+//     cout << "Enter the size of array: ";
+//     cin >> size;
+    
+//     int arr[size];
+    
+//     cout << "Enter " << size << " numbers: " << endl;
+//     for (int i = 0; i < size; i++) {
+//         cout << "Number " << (i + 1) << ": ";
+//         cin >> arr[i];
+//     }
+    
+//     int smallest = arr[0];
+//     int largest = arr[0];
+    
+//     for (int i = 1; i < size; i++) {
+//         if (arr[i] < smallest) {
+//             smallest = arr[i];
+//         }
+        
+//         if (arr[i] > largest) {
+//             largest = arr[i];
+//         }
+//     }
+    
+//     cout << "\nArray: ";
+//     for (int i = 0; i < size; i++) {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+    
+//     cout << "Smallest number: " << smallest << endl;
+//     cout << "Largest number: " << largest << endl;
+    
+//     return 0;
+// }
