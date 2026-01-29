@@ -403,24 +403,94 @@
 
 // 15. **Sorting an Array**  
 
-#include <iostream>
-using namespace std;
-int main(){
-    int arr[6]= {3, 1, 4, 1, 5, 9};
-    int temp;
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int arr[6]= {3, 1, 4, 1, 5, 9};
+//     int temp;
 
-    for(int i = 0; i<6; i++){
-        for(int j = i+1; j<6; j++){
-            if(arr[j]<arr[i]){
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-    }
-    cout<<"Sorted array: "<<endl;
-    for(int i = 0; i<6; i++){
-        cout<< arr[i];
-    }
-    return 0;
-}
+//     for(int i = 0; i<6; i++){
+//         for(int j = i+1; j<6; j++){
+//             if(arr[j]<arr[i]){
+//                 temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+//     cout<<"Sorted array: "<<endl;
+//     for(int i = 0; i<6; i++){
+//         cout<< arr[i];
+//     }
+//     return 0;
+// }
+
+// 16. **Finding the Sum of Elements in an Array** 
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[5] = {1, 2, 3, 4, 5};
+//     int temp = 0;
+//     for(int i = 0; i<5; i++){
+//         temp = temp + arr[i]; 
+//     }
+//     cout<<"Sum = "<<temp<<endl;
+
+//     return 0;
+// }
+
+// 17. **Checking for Armstrong Numbers in a Range**  
+
+// #include<iostream>
+// using namespace std;
+
+// int isArmstrong(int n)
+// {
+//     int original=n;
+//     int sum = 0;
+
+//     while(n>0){
+//         int digit = n% 10;
+//         sum +=digit*digit*digit;
+//         n = n/10;
+
+//     }
+//     return sum == original;
+// }
+
+
+// int main(){
+//     int start = 1, end = 500;
+    
+//     cout<<"Armstrong Numbers are : " <<endl;
+
+//     for(int i = start; i<= end; i++){
+
+//         if(isArmstrong(i)){
+//             cout<<i<<" ";
+//         }
+//     }     
+
+
+//     return 0;
+// }
+
+
+// 18. **Generating Multiplication Tables**  
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int num;
+//     cout<<"Enter a number: "<<endl;
+//     cin >> num;
+
+//     for(int i = 1; i <= 5; i++) {
+//         cout << num << " x " << i << " = " << num * i << endl;
+//     }
+
+//     return 0;
+// }
