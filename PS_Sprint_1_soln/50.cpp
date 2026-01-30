@@ -494,3 +494,26 @@
 
 //     return 0;
 // }
+
+// 19. **Finding Prime Numbers in a Range**  
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+    
+//     for(int num = 10; num<= 30; num++){
+//         bool prime = true;
+//         for(int i = 2; i*i<= num; i++){ /*i*i<=n start always from 2 and stop at i<root n or i*i<=n bcz So checking after √n is useless*/
+//             if(num % i == 0){
+//                 prime = false;
+//                 break;
+//             }
+
+//         }
+//         if(prime){
+//             cout<<num<< " ";
+//         }
+//     }
+//     return 0;
+// }
