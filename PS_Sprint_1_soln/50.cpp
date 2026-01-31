@@ -517,3 +517,126 @@
 //     }
 //     return 0;
 // }
+
+// 20. **Checking for Perfect Numbers**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter a number: "<<endl;
+//     cin>>n;
+//     int sum = 0;
+
+//     for(int i = 1; i<=n/2; i++){
+//         if(n % i == 0){
+//             sum = sum + i;
+//         }
+//     }
+
+//     if(sum == n && n != 0)
+//         cout<<"Perfect Number";
+//     else
+//         cout<<"Not perfect Number";    
+
+
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter a number: ";
+//     cin>>n;
+
+//     if(n<=1){
+//         cout<<"Not Perfect Number";
+//         return 0;
+//     }
+//     int sum = 1; // 1 divisor of everyone
+//     for(int i = 2; i * i <= n; i++){
+//         if(n % i == 0){
+//             sum+= i;
+
+//             if(i != n / i)
+//                 sum+= n / i;
+//         }
+//     }
+
+//     if(sum == n)
+//         cout<<"Perfect Number";
+//     else
+//         cout<<"Not Perfect Number";
+
+//     return 0;
+
+// 21. **Calculating the Sum of Even Numbers in a Range**
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int start, end;
+//     cout<<"Enter start and end numbers: "<<endl;
+//     cin>>start>>end;
+
+//     int sum = 0;
+
+//     for(int i = start; i<=end; i++){
+//         if(i % 2 == 0){
+//             sum += i;
+//         }
+//     }
+//     cout<<sum;
+//     return 0;
+// }
+
+// 22. **Calculating the Sum of Odd Numbers in a Range**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int start, end;
+//     cout<<"Enter start and end numbers: "<<endl;
+//     cin>>start>>end;
+
+//     int sum = 0;
+
+//     for(int i = start; i<=end; i++){
+//         if(i % 2 != 0){
+//             sum += i;
+//         }
+//     }
+//     cout<<sum;
+//     return 0;
+// }
+
+// 23. **Finding the Fibonacci Number at a Specific Position** 
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter a number"<<endl;
+//     cin>>n;
+
+//     if(n==0){
+//         cout<<0;
+//         return 0;
+//     }
+//     int a = 0, b = 1, c;
+
+//     for(int i =2; i<=n; i++){
+//         c= a+b;
+//         a=b;
+//         b=c;
+//     }
+//     cout<<c;
+
+//     return 0;
+// }
