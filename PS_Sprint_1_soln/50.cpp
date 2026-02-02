@@ -640,3 +640,62 @@
 
 //     return 0;
 // }
+
+// 24. **Printing Prime Numbers Less Than a Given Number**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter a number: "<<endl;
+//     cin>>n;
+//     for(int j=1; j<n; j++){
+//     bool prime = true;
+//     for(int i = 2; i*i<j; i++){
+//         if(j % i == 0){
+//             prime = false;
+//             break;
+//         }
+//     }
+//     if(prime){
+//         cout<<j<< " ";
+//     }
+// } 
+//     return 0;
+// }
+
+
+// 25. **Finding the Number of Digits in a Number**  
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter digits: "<<endl;
+//     cin>>n;
+//     int count = 0;
+//     if(n == 0){
+//         cout<<"1";
+//         return 0;
+//     }
+
+//     while (!n == 0)
+//     {
+//         count++;
+//         n = n/10; 
+//     }
+//     cout<<count;
+
+
+//     return 0;
+// }
+// Dividing a number by 10 removes its last digit
+//  1234 / 10 = 123
+// 123 / 10  = 12
+// 12 / 10   = 1
+// 1 / 10    = 0
+
+// 26. **Checking if a Number is a Narcissistic Number**  
+
